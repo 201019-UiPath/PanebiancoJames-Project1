@@ -36,6 +36,7 @@ namespace GameKingdomLib
                     throw new Exception("\nInvalid Name/Password. Please try again");
                 }
             }
+            Log.Information("Manager signed in");
             return repo.SignInManager(name,password);
         }
 
@@ -45,6 +46,7 @@ namespace GameKingdomLib
         }
         public List<Manager> GetAllManagers()
         {
+            Log.Information("Returned all managers");
             return repo.GetAllManagers();
         }
     }

@@ -26,11 +26,13 @@ namespace GameKingdomLib
                     throw new Exception($"\nCustomer name {newCustomer.Name} already exists. Not you? Please enter a unique name.");
                 }
             }
+            Log.Information("Customer added");
             repo.AddACustomer(newCustomer);
         }
 
         public List<Customer> GetAllCustomers()
         {
+            Log.Information("Returned all customers");
             return repo.GetAllCustomers();
         }
 
@@ -49,6 +51,7 @@ namespace GameKingdomLib
                     throw new Exception("\nInvalid Name/Password. Please try again");
                 }
             }
+            Log.Information("Customer signed in");
             return repo.SignInCustomer(name,password);
         }
 
