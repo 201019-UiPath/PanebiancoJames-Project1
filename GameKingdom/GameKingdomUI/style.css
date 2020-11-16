@@ -1,42 +1,93 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
-
+@keyframes backgroundColorPalette {
+    0% {
+      background: #001021;
+    }
+    25% {
+      background: #034748;
+    }
+    50% {
+      background: #1481BA;
+    }
+    75% {
+      background: #11B5E4;
+    }
+    100% {
+      background: #C2E7D9;
+    }
+  }
+@keyframes backgroundColorJumboPalette {
+    0% {
+      background: #AD7A99;
+    }
+    25% {
+      background: #B2CEDE;
+    }
+    50% {
+      background: #8CDFD6;
+    }
+    75% {
+      background: #6DC0D5;
+    }
+    100% {
+      background: #5A716A;
+    }
+  }
 .table{
-    background-color: #276FBF;
+    background-color: #a31b54;
 }
 body{
-    background-color: #0F7173;
-    color: aliceblue;
+    animation-name: backgroundColorPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 .jumbotron {
-    background-color: #662E9B ;
+    animation-name: backgroundColorJumboPalette;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
     color: aliceblue;
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 ::-webkit-input-placeholder {
-    color: #03CEA4 !important;
+    color: aliceblue !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 ::-moz-placeholder {
-    color:r #03CEA4 !important;
+    color: aliceblue !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 ::-ms-placeholder {
-    color: #03CEA4 !important;
+    color: aliceblue !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 ::placeholder {
-    color: #03CEA4 !important;
+    color: aliceblue !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .form-control {
     background-color: #42273B ;
 }
 .form-group > input {
-    color: #03CEA4 !important;
+    color: aliceblue !important;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.form-group{
+    color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 .active {
     margin-left: 10px;
     color: #42273B;
 }
 .topnav {
-    background-color: #59CD90;
+    background-color: #06070E;
+}
+.topnav > a {
+    color: antiquewhite;
 }
 
 .center {
@@ -48,4 +99,5 @@ body{
     text-align: center;
     font-size: 170%;
     color: aliceblue;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
